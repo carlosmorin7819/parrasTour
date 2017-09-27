@@ -1,0 +1,90 @@
+* {
+	font-family: 'Noto Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
+ }
+ .list{
+ 	list-style: none;
+ }
+ .wathDo, .places{
+ 	background-position: center;
+ 	background-size: cover;	
+ 	border: 2px solid #fff !important;
+ }
+.wathDo { background-image: url(../IMG/wathDo.JPG); }
+.places { background-image: url(../IMG/places.JPG); }
+nav{
+	width: 230px;
+	height: 100%;
+	position: absolute;
+
+}
+ul, nav{
+	transition: all .3s; 
+}
+ul.menunav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 100%;
+	background: #293f54;
+	transition: all .3s; 
+}
+.hideNav{
+	width: 0px !important;
+	overflow: hidden;
+}
+.h0{
+	width: 0px !important;
+}
+div.user{
+	display: block;
+	position: relative;
+	height: 72px;
+	background: #172d44;
+	padding: 5px;
+}
+div.imgProfile{
+	width: 60px;
+	height: 60px;
+	display: block;
+	background: url(../IMG/user.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	border: 2px solid #FFF;
+	box-sizing: border-box;
+	float: left;
+}
+div.infoUser{
+	display: block;
+	width: 150px;
+	float: right;
+	color: #fff;
+	text-transform: capitalize;
+	
+}
+ul.menunav li a{
+	color: #f6f6f6;
+	text-transform: capitalize;
+	padding: 8px;
+	display: block;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	transition: all .2s;
+}
+ul.menunav li a:hover{
+	text-decoration: none;
+	color: #ccc;
+	background: #35475b;
+}
+.menuIcon{
+	position: absolute; 
+	top: 0px;
+	right: -32px;
+	padding: 10px;
+	background: #172d44;
+	color: #F9F9F9;
+	cursor: pointer;
+	border-radius: 0px 3px 3px 0px;
+}
