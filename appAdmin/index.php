@@ -10,7 +10,7 @@
 </head>
 <body>
 	<?php include 'menu.php'; ?>
-
+	<?php include 'TEMPLATES/users.php'; ?>
 
 	<script src="JS/jquery-3.2.1.min.js"></script>
 	<script src="JS/action.js"></script>

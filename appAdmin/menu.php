@@ -1,4 +1,8 @@
+<div class="menu">
+		hola
+	</div>
 <nav>
+	
 	<ul class="menunav">
 		<div class="user">
 			<div class="imgProfile"></div>
@@ -17,6 +21,54 @@
 			<a href="">
 				<i class="fa fa-user" aria-hidden="true"></i>
 				Usuarios
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+				Restaurantes
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+				Restaurantes
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+				Restaurantes
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+				Restaurantes
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+				Restaurantes
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+				Restaurantes
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+				Restaurantes
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+				Restaurantes
 			</a>
 		</li>
 		<li>

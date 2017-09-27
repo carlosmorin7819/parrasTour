@@ -90,6 +90,12 @@
 .s26{ font-size: 26px !important; } .s28{ font-size: 28px !important; } .s30{ font-size: 30px !important; }
 .s40{ font-size: 40px !important; } .s50{ font-size: 50px !important ; } .s60{ font-size: 60px !important; }
   .title2{ font-size: 24px; }
+  .titlePanel{
+    padding-top: 20px;
+    font-size: 24px;
+    background: red;
+
+  }
 .text-center{ text-align: center !important; } .text-left{ text-align: left; } 
 .text-right{ text-align: right; } .text-justify{ text-align: justify; }
 .text-italic{ font-style: italic; }
