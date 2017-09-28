@@ -33,6 +33,14 @@ ul.menunav{
 	transition: all .3s; 
 
 }
+.bgBlack{
+  background: rgba(255,255,255,.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .hideNav{
 	width: 0px !important;
 	overflow: hidden;
@@ -130,4 +138,12 @@ div.containerC{
 }
 .tableContainer > table thead tr th{
 	border-bottom: 2px solid #ccc;
+	padding: 5px;
+	text-align: center;
+}
+
+.tableContainer > table tbody tr th{
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	padding: 5px;
 }

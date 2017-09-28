@@ -1,4 +1,4 @@
-
+|
 *{
 	margin: 0px;
 	padding: 0px;
@@ -140,13 +140,14 @@
 }
 .buttonOrange{
   width: 100%;
-    padding: 7px;
-    background: #f27242;
-    display: block;
-    text-align: center;
-    color: #fff;
-    border-radius: 3px;
-    border:none;
+  padding: 5px;
+  font-size: 15px;
+  background: #f27242;
+  display: block;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  border:none;
 }
 .imgCenter{
   background-origin: content-box !important;
