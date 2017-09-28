@@ -10,10 +10,12 @@
 </head>
 <body>
 	<?php include 'menu.php'; ?>
+
 	<div class="contentC">
 
-	<div class="barMenu">	</div>		<?php include 'TEMPLATES/users.php'; ?>
+		<div class="barMenu">	</div>		<?php include 'TEMPLATES/users.php'; ?>
 	</div>
+
 
 	<script src="JS/jquery-3.2.1.min.js"></script>
 	<script src="JS/action.js"></script>

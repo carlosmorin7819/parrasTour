@@ -20,6 +20,7 @@ nav{
 }
 ul, nav{
 	transition: all .3s; 
+	
 }
 ul.menunav{
 	position: absolute;
@@ -30,6 +31,7 @@ ul.menunav{
 	overflow: hidden;
 	background: #293f54;
 	transition: all .3s; 
+
 }
 .hideNav{
 	width: 0px !important;
@@ -65,7 +67,13 @@ div.infoUser{
 	text-transform: capitalize;
 	
 }
+ul.menunav li{
+	width: 230px;
+	display: block;
+	width: 100%;
+}
 ul.menunav li a{
+	width: 230px;
 	color: #f6f6f6;
 	text-transform: capitalize;
 	padding: 8px;
@@ -88,6 +96,7 @@ ul.menunav li a:hover{
 	cursor: pointer;
 	border-radius: 0px 3px 3px 0px;
 }
+
 .contentC{
 	height: 96vh;
 	display: block;

@@ -3,10 +3,10 @@ $(document).ready(function () {
 	$("#menuIcon").click(function(){
 		if ($("ul.menunav").hasClass("hideNav")) {
 			$("div.contentC").removeClass("w100");
-
 			$("ul.menunav").removeClass("hideNav");
 			$("nav").removeClass("h0");
 		}else{
+			$("div.containerC").addClass("noMargin-left");
 			$("ul.menunav").addClass("hideNav");
 			$("div.contentC").addClass("w100");
 			$("nav").addClass("h0");
