@@ -9,65 +9,69 @@
 	<link rel="stylesheet" href="CSS/helpers.css">
 	<link rel="stylesheet" href="CSS/style.css">
 </head>
+<style type="text/css">
+	.menu{
+
+		width: 100%;
+		height: 50px;
+		background: #d27b0c;
+		margin-top: -15px;
+		font-size: 20px;
+		text-align: left;
+	}
+
+	.logo{
+
+	background: rgba(210, 123, 12, 0.36);
+	}
+
+	.opcion{
+		background-position: center;
+ 	background-size: cover;	
+ 	border: 2px solid #fff !important;
+ 	background:  rgba(210, 123, 12, 0.8);
+	}
+
+</style>
+<?php
+ include 'conexion.php';
+
+ $query_users = mysql_query("SELECT * FROM restaurantes") or die(mysql_error());
+ ?>
+
+
 <body>
 	<header>
 		
 	</header>
 	<body>
-		<div class="container">
-			<ul class="list row">
-				<li class="wathDo col-xs-6  bgBlue h120 block noPadding ">
-					<div class="content middle text-center">
-						<i class="fa fa-list-ul s40 cWhite text-shadow" aria-hidden="true"></i><br>
-						<span class="cWhite text-shadow s18 text-600">Que hacer?</span>	
+		<div align="center">
+		<table border="0" class="content middle text-center">	
+			<tr>
+				<td>
+					<div class="menu">
+						<h3 class="fa fa-list-ul  cWhite text-shadow" aria-hidden="true">
+							MENU
+						</h3>
 					</div>
-				</li>
-				<li class="places col-xs-6  bgBlue h120 block noPadding ">
-					<div class="content middle text-center">
-						<i class="fa fa-map-marker s40 cWhite text-shadow" aria-hidden="true"></i><br>
-						<span class="cWhite text-shadow s18 text-600">Lugares</span>	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="logo">
+						<img src="img/logo.png">
+						</h3>
 					</div>
-				</li>
-				<li class="wathDo col-xs-6  bgBlue h120 block noPadding ">
-					<div class="content middle text-center">
-						<i class="fa fa-list-ul s40 cWhite text-shadow" aria-hidden="true"></i><br>
-						<span class="cWhite text-shadow s18 text-600">Que hacer?</span>	
-					</div>
-				</li>
-				<li class="places col-xs-6  bgBlue h120 block noPadding ">
-					<div class="content middle text-center">
-						<i class="fa fa-map-marker s40 cWhite text-shadow" aria-hidden="true"></i><br>
-						<span class="cWhite text-shadow s18 text-600">Lugares</span>	
-					</div>
-				</li>
-				<li class="wathDo col-xs-6  bgBlue h120 block noPadding ">
-					<div class="content middle text-center">
-						<i class="fa fa-list-ul s40 cWhite text-shadow" aria-hidden="true"></i><br>
-						<span class="cWhite text-shadow s18 text-600">Que hacer?</span>	
-					</div>
-				</li>
-				<li class="places col-xs-6  bgBlue h120 block noPadding ">
-					<div class="content middle text-center">
-						<i class="fa fa-map-marker s40 cWhite text-shadow" aria-hidden="true"></i><br>
-						<span class="cWhite text-shadow s18 text-600">Lugares</span>	
-					</div>
-				</li>
-				<li class="wathDo col-xs-6  bgBlue h120 block noPadding ">
-					<div class="content middle text-center">
-						<i class="fa fa-list-ul s40 cWhite text-shadow" aria-hidden="true"></i><br>
-						<span class="cWhite text-shadow s18 text-600">Que hacer?</span>	
-					</div>
-				</li>
-				<li class="places col-xs-6  bgBlue h120 block noPadding ">
-					<div class="content middle text-center">
-						<i class="fa fa-map-marker s40 cWhite text-shadow" aria-hidden="true"></i><br>
-						<span class="cWhite text-shadow s18 text-600">Lugares</span>	
-					</div>
-				</li>
-		
-
-			</ul>
-		</div>
+				</td>
+			</tr>
+			<?php 	
+						    
+			while($elemento = mysql_fetch_array($query_users)){ ?>
+			<tr  class="opcion col-xs-6   h120 block  " >
+				<td > <img src="img/logo.png"  height="50"> <a href="" class="cWhite text-shadow s24 text-600">   <?= $elemento['nombre']; }?></a> </td>
+			
+		</table>
+</div>
 	</body>
 	<footer>
 		
