@@ -98,6 +98,9 @@
 .text-uppercase{ text-transform: uppercase; }
 .lineH2{ line-height: 2;} .bgLightGrey{ background: #eeeeee; }
 .bgRed{ background: red; } .bgWhite{ background: #fff; }
+.bgOrange{
+  background: #fa9800; 
+}
 .bgBlue{ background-color: #07bac1; } .bgBlack2{ background: #303030; }
 .noPadding{ padding: 0px !important; } .noMargin{ margin: 0px !important; }
 .cWhite{ color: #FFF; }
@@ -154,7 +157,7 @@
     width: 100%;
     height: 35px;
     border-radius: 3px;
-    outline: none;
+
     padding: 0px 5px;
     color: #000 !important;
     border: 1px solid #e6eaed;

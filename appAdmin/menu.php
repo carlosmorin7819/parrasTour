@@ -1,6 +1,4 @@
-<div class="menu">
-		hola
-	</div>
+
 <nav>
 	
 	<ul class="menunav">
