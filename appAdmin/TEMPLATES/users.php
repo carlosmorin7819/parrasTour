@@ -281,7 +281,7 @@
 
 </div>
 <div class="bgModal hidden"></div>
-<form action="" id="formUsers" method="post">
+<form action="" id="formUsers" method="post" class="hidden formUsers">
 	<h3 class="titleModal">Formulario de registro</h3>
 
 	<label for="name">Nombres *</label>
@@ -319,7 +319,7 @@
 		</div>
 	</div>
 </form>
-<div class="spinner">
+<div class="spinner hidden">
   <div class="bounce1"></div>
   <div class="bounce2"></div>
   <div class="bounce3"></div>

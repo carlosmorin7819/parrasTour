@@ -16,10 +16,12 @@ $(document).ready(function () {
 
 	$("button#modalUser").click(function(){
 		$("div.bgModal").removeClass("hidden");
+		$("form.formUsers").removeClass("hidden");
 		console.log("hola");
 	})
 	$("div.bgModal").click(function(){
 		$(this).addClass("hidden");
+		$("form.formUsers").addClass("hidden");
 	});
 
 
