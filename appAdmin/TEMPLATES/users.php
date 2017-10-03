@@ -285,25 +285,29 @@
 	<h3 class="titleModal">Formulario de registro</h3>
 
 	<label for="name">Nombres *</label>
-	<input type="text" name="" placeholder="Nombres" id="name" class="inputStyle">
+	<input type="text" name="name" placeholder="Nombres" id="name" class="inputStyle">
 
 	<label for="name">Telefono *</label>
-	<input type="number" name="" placeholder="Nombres" id="name" class="inputStyle">
+	<input type="number" name="phone" placeholder="555-555-55-55" id="phone" class="inputStyle">
 
-	<label for="mail">Correo *</label>
-	<input type="mail" name="" placeholder="Correo" id="mail" class="inputStyle">
+	<label for="email">Correo *</label>
+	<input type="email" name="email" placeholder="Correo" id="email" class="inputStyle">
 
-	<label for="mail">Genero *</label>
+	<label for="pass">Contraseña *</label>
+	<input type="password" name="pass" placeholder="Correo" id="mail" class="inputStyle">
+
+	<label for="gender">Genero *</label>
 	<select name="gender" id="gender" class="inputStyle">
 		<option value="1">Hombre</option>
 		<option value="2">Mujer</option>
 	</select>
 
-	<label for="typeUser">Genero *</label>
-	<select name="typeUser" id="typeUser" class="inputStyle">
+	<label for="type_user">Tipo usuario *</label>
+	<select name="type_user" id="type_user" class="inputStyle">
 		<option value="1">Operador</option>
 		<option value="2">Master</option>
 	</select>
+	<input type="hidden" name="type_form" value="save_user">
 	<div class="clear"></div>
 	<div class="row">
 		
@@ -313,7 +317,7 @@
 			</button>
 		</div>
 		<div class="col-lg-2">
-			<button type="submit" class="btn-green bgGreen btn" id="saveUser">
+			<button type="submit" class="btn-green bgGreen btn" id="saveUser" onclick="save_user();">
 				Guardar Usaurio
 			</button>
 		</div>
