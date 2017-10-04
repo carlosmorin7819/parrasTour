@@ -14,6 +14,7 @@
 					$name = $_POST['name'];
 					$phone = $_POST['phone'];
 					$email = $_POST['email'];
+					$pass = $_POST['pass'];
 					$gender = $_POST['gender'];
 					$type_user = $_POST['type_user'];
 					$pass = $_POST['pass'];
