@@ -29,7 +29,7 @@
 		background-position: center;
  	background-size: cover;	
  	border: 2px solid #fff !important;
- 	background:  rgba(210, 123, 12, 0.8);
+ 	background:  rgba(210, 123, 12, 0.88);
 	}
 
 </style>
@@ -67,8 +67,8 @@
 			<?php 	
 						    
 			while($elemento = mysql_fetch_array($query_users)){ ?>
-			<tr  class="opcion col-xs-6   h120 block  " >
-				<td > <img src="img/logo.png"  height="50"> <a href="" class="cWhite text-shadow s24 text-600">   <?= $elemento['nombre']; }?></a> </td>
+			<tr  class="opcion col-xs-6   h120 block  "  >
+				<td >  <a href="" class="cWhite text-shadow s20 text-600"> <img src=" <?= "logorestaurantes/".$elemento['imagen']; ?>"  height="50"> <br>  <?= $elemento['nombre']; }?></a> </td>
 			
 		</table>
 </div>

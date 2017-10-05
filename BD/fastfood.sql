@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-09-2017 a las 02:12:09
+-- Tiempo de generación: 04-10-2017 a las 04:56:38
 -- Versión del servidor: 5.6.20
 -- Versión de PHP: 5.5.15
 
@@ -28,22 +28,23 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `restaurantes` (
 `id` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL
+  `nombre` varchar(50) NOT NULL,
+  `imagen` varchar(50) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Volcado de datos para la tabla `restaurantes`
 --
 
-INSERT INTO `restaurantes` (`id`, `nombre`) VALUES
-(1, 'pizza chuzz'),
-(2, 'pizza Mia'),
-(3, 'El mezon '),
-(4, 'La casona'),
-(5, 'Parras Pizza Club'),
-(6, 'Pizza to go'),
-(7, 'Angelottis'),
-(8, 'Tortas GM');
+INSERT INTO `restaurantes` (`id`, `nombre`, `imagen`) VALUES
+(1, 'pizza chuzz', ''),
+(2, 'pizza Mia', 'mia.png'),
+(3, 'El mezon ', ''),
+(4, 'La casona', ''),
+(5, 'Parras Pizza Club', 'club.jpg'),
+(6, 'Pizza to go', '509572.jpg'),
+(7, 'Angelottis', ''),
+(8, 'Tortas GM', '');
 
 -- --------------------------------------------------------
 
