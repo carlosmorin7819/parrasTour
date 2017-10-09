@@ -26,7 +26,7 @@
 
 		public static function save_user($name, $email, $pass, $phone, $type_user, $gender)
 		{
-			mysql_query("INSERT INTO users VALUES('','$name','$phone','$email',$type_user','$pass')");
+			mysql_query("INSERT INTO users VALUES('','$name','$phone','$email','$gender',$type_user','$pass')");
 			//$resultUsers = mysql_query("SELECT * FROM users"); 
 		}
 
