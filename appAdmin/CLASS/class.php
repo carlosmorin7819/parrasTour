@@ -12,25 +12,24 @@
 
 			case 'save_user':
 					$name = $_POST['name'];
+					$nombre = $_FILES['imagen']['name'];
+					$mail = $_POST['mail'];
+					$pass = $_POST['pass'];
 					$phone = $_POST['phone'];
-					$email = $_POST['email'];
-					$pass = $_POST['pass'];
-					$gender = $_POST['gender'];
 					$type_user = $_POST['type_user'];
-					$pass = $_POST['pass'];
-					users_class::save_user($name, $phone, $email, $gender, $type_user, $pass);				
+					$gender = $_POST['gender'];
+					users_class::save_user($name, $mail, $pass, $phone, $type_user, $gender, $nombre);				
 				break;
+
 
 			case 'save_user':
 					$name = $_POST['name'];
-					$phone = $_POST['phone'];
-					$email = $_POST['email'];
+					$mail = $_POST['mail'];
 					$pass = $_POST['pass'];
-
+					$phone = $_POST['phone'];
 					$type_user = $_POST['type_user'];
-
 					$gender = $_POST['gender'];
-					users_class::save_user($name, $phone, $email, $pass, $gender, $type_user);			
+					users_class::save_user($name, $mail, $pass, $phone, $type_user, $gender);			
 				break;
 
 			case 'save_costumer':
