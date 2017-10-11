@@ -26,8 +26,18 @@
 
 		public static function save_user($name, $email, $pass, $phone, $type_user, $gender)
 		{
-			mysql_query("INSERT INTO users VALUES('','$name','$phone','$email',$type_user','$pass')");
+			//mysqli_query("INSERT INTO users VALUES('','$name','$phone','$email',$type_user','$pass')");
 			//$resultUsers = mysql_query("SELECT * FROM users"); 
+		
+			$consulta = "INSERT INTO users VALUES('','$name','$phone','$email',$type_user','$pass')";
+			if($resultado)
+			{
+			echo "Enhorabuena, la acción ha sido llevada a cabo con éxito";
+			}
+			else
+			{
+			echo "Ha ocurrido un error";
+			}
 		}
 
 		public static function save_costumer($name, $last_name, $mail, $phone, $origin_place)
