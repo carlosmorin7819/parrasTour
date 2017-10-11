@@ -4,13 +4,13 @@
 	class users_class
 	{
 		
-		public static function validate_user($mail, $pass)
+		public static function validate_user($email, $pass)
 		{
-			$result = mysql_query("SELECT * FROM users WHERE mail = '$mail' AND pass = '$pass'"); 
+			$result = mysql_query("SELECT * FROM users WHERE email = '$email' AND pass = '$pass'"); 
 
 			if (mysql_num_rows($result)>0) {
 				$row = mysql_fetch_array($result);
-				$_SESSION['user'] = $session = array('user' => $row['mail'], 'type_user' => $row['type_user'],);
+				$_SESSION['user'] = $session = array('user' => $row['mail'], 'type_user' => $row['type_user'],'IMG' => $row['nombres']);
 				//$_SESSION['user'] .= $row['type_user'];
 				echo TRUE . "\n";
 				//echo "hola si se armo";
@@ -24,21 +24,27 @@
 	
 		}
 
-		public static function save_user($name, $email, $pass, $phone, $type_user, $gender)
+		public static function save_user($name, $email, $pass, $phone, $type_user, $gender, $nombre)
 		{
-			//mysqli_query("INSERT INTO users VALUES('','$name','$phone','$email',$type_user','$pass')");
-			//$resultUsers = mysql_query("SELECT * FROM users"); 
-		
-			$consulta = "INSERT INTO users VALUES('','$name','$phone','$email',$type_user','$pass')";
-			if($resultado)
-			{
-			echo "Enhorabuena, la acción ha sido llevada a cabo con éxito";
+
+			$nombrer = strtolower($nombre);
+			$cd=$_FILES['imagen']['tmp_name'];
+			$ruta = "../IMG/" . $_FILES['imagen']['name'];
+			$destino = "../IMG/".$nombrer;
+			$resultado = @move_uploaded_file($_FILES["imagen"]["tmp_name"], $ruta);
+
+			if (!empty($resultado)){
+
+               	//mysql_query($conexion,"INSERT INTO users VALUES ('". $nombre."','" . $destino . "')"); 
+                //echo "el archivo ha sido movido exitosamente";
+                mysql_query("INSERT INTO users VALUES('','$name','$email','$pass','$type_user','$gender','$phone','$nombre')");
+
+            }else{
+
+                echo "Error al subir el archivo";
+
+                }
 			}
-			else
-			{
-			echo "Ha ocurrido un error";
-			}
-		}
 
 		public static function save_costumer($name, $last_name, $mail, $phone, $origin_place)
 		{
