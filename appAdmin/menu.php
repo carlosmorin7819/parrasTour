@@ -4,15 +4,38 @@
 
 	if ($session_user){?>
 	<ul id="menu">	
-		<li>
-			<a href="panel.php">
-				<img src="IMG/logo.png" alt="" height="80">	
-				<p class="cWhite text-center padd5">
-					<img src="IMG/<?php echo $_SESSION['user']['IMG']; ?>" alt="HOLA" width="80">
-					<?php echo $_SESSION['user']['user']; ?>
-					
-				</p>
-			</a>
+		<li class="cWhite">
+		
+				<div class="row">
+					<div class="col-lg-4 ">
+						<div class="imgProfile" style=" background-image: url(IMG/<?php echo $_SESSION['user']['IMG']; ?>);"></div>
+					</div>
+					<div class="col-lg-8 noMargin noPadding">
+						<div class="h80 block">
+							<div class="content middle">
+								<div class="pointG "></div>
+								<span class="text-600 showInfo cursorPointer">
+									Disponible 
+									<i class="fa fa-caret-down" aria-hidden="true"></i>
+								</span>
+								<div class="infoUser">
+									<span class="cWhite text-left padd5 capitalize s12	">
+										<?php echo $_SESSION['user']['user']; ?>
+									</span><br>
+									<span class="s12">
+										<?php echo $_SESSION['user']['name']; ?>
+									</span>
+								</div>
+								<p>							
+									
+								</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+			
 			
 			
 		</li>

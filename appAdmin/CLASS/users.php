@@ -10,7 +10,7 @@
 
 			if (mysql_num_rows($result)>0) {
 				$row = mysql_fetch_array($result);
-				$_SESSION['user'] = $session = array('user' => $row['mail'], 'type_user' => $row['type_user'],'IMG' => $row['nombres']);
+				$_SESSION['user'] = $session = array('name' => $row['name'],'user' => $row['email'], 'type_user' => $row['type_user'],'IMG' => $row['nombre']);
 				//$_SESSION['user'] .= $row['type_user'];
 				echo TRUE . "\n";
 				//echo "hola si se armo";
@@ -37,7 +37,7 @@
 
                	//mysql_query($conexion,"INSERT INTO users VALUES ('". $nombre."','" . $destino . "')"); 
                 //echo "el archivo ha sido movido exitosamente";
-                mysql_query("INSERT INTO users VALUES('','$name','$email','$pass','$type_user','$gender','$phone','$nombre')");
+                mysql_query("INSERT INTO users VALUES('','$name','$phone','$email','$type_user','$pass','$nombre','$gender')");
 
             }else{
 

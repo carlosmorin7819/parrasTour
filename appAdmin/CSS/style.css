@@ -5,6 +5,24 @@
 	font-family: 'Roboto', sans-serif;	
 	
 }
+.imgProfile{
+	width: 60px;
+	height: 60px;
+	background: red;
+	border-radius: 50px;
+	background-position: center;
+	background-size: cover;
+	border: 1px solid #ccc;
+}
+div.pointG{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-right: 5px;
+
+	border-radius: 50px;
+	background: green;
+}
 #menu{
 	width: 250px;
 	background: #31383e;

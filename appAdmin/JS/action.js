@@ -10,6 +10,10 @@ $(document).ready(function () {
 	$("a.next").click(function (){
 		$(this).empty().html(">");
 	});
+	$("span.showInfo").click(function () {
+		$(".infoUser").toggleClass("hidden");
+		//alert();		// body...
+	})
 });
 function modalBed(){
 	$("#bgBlack").fadeIn('fast');
