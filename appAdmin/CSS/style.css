@@ -5,6 +5,15 @@
 	font-family: 'Roboto', sans-serif;	
 	
 }
+.toggleMenu{
+    position: absolute;
+    right: -38px;
+    background: #31383e;
+    padding: 10px 13px;
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
 .imgProfile{
 	width: 60px;
 	height: 60px;
@@ -31,13 +40,25 @@ div.pointG{
 	position: absolute;
 	top: 0;
 	left: 0;	
+	overflow: hidden;
+	transition: all .3s;
 }
-a.previous {
-	background: red !Important;
+.w0{
+	width: 0px !important;
+
 }
+input[type=search] {
+	padding: 3px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+}
+.left0{
+	left: 0px !important;
+}
+
 #menu li a{
 	display: block;
-	padding: 10px 20px 10px 10px;
+	padding: 7px 7px 7px 15px;
 	box-sizing: border-box;
 	border-bottom: .5px solid rgba(255, 255, 255, .2);
 	text-decoration: none;
@@ -45,6 +66,14 @@ a.previous {
 	font-weight: 500;
 	font-size: 14px;
 	transition: all .3s;
+}
+nav.contentMenu{
+	background: red !important;
+
+	width: 250px;
+	position: relative;
+	transition: all .3s;
+
 }
 #menu li a:hover{
 	color: #b01c2e;
@@ -76,7 +105,11 @@ ul.submenu li a{
 }
 .panelContainer{
 	margin-left: 250px;
-	padding: 15px;
+	padding: 35px 20px;
+	transition: all 0.3s;
+}
+.ml0{
+	margin-left: 0px !important;
 }
 .containerTable{
 	width: 100%;
@@ -118,7 +151,8 @@ table tfoot tr th{
 table{
 	width: 100%;
 	width: 100%;
-    border-spacing: 0px;
+    border-
+    cing: 0px;
 }
 .buttonAdd{
 	padding: 5px 8px;

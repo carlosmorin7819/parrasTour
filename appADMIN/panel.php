@@ -2,7 +2,7 @@
 	session_start();
 	$session_user = isset($_SESSION['user']);
 	if ($session_user){	
-		echo "session setada";
+		//echo "session setada";
 		include 'header.php';
 		
 		if ($_GET) {

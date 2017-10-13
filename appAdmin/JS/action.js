@@ -1,15 +1,13 @@
 $(document).ready(function () {
+	 $("span.toggleMenu").click(function (){
+       	$("#menu").toggleClass("w0");
+       	$("nav.contentMenu").toggleClass("w0");
+       	$("div.panelContainer").toggleClass("ml0");
+    });
+
+
 	 $('#tableUsers').DataTable();	
 
-	$("a.previous").empty().html("<");
-	$("a.previous").click(function (){
-		$(this).empty().html("<");
-	});
-
-	$("a.next").empty().html(">");
-	$("a.next").click(function (){
-		$(this).empty().html(">");
-	});
 	$("span.showInfo").click(function () {
 		$(".infoUser").toggleClass("hidden");
 		//alert();		// body...
