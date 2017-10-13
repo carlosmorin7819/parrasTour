@@ -3,6 +3,21 @@
 	$query_users = mysql_query("SELECT * FROM users") or die(mysql_error());
 
 	$user_master = $_SESSION['user']['type_user'] == 1;
+
+	switch ($user_master) {
+		case '1':
+			$user_master = "MAESTRO";
+			break;
+		case '2':
+			$user_master = "ADMIN";
+			break;
+		case '3':
+			$user_master = "OPERADOR";
+			break;
+		default:
+	
+			error_log($user_master);
+	}
 	
 ?>
 <div class="panelContainer">
