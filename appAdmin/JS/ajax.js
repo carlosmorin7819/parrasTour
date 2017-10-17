@@ -14,10 +14,10 @@ function login_validate() {
           alert("enviado");
           var data = datos;
           if (data == 1) {
-            alert("si se arma");
+            alert("Usuario valido");
             window.location.href = 'panel.php';
           }else{
-            alert("no se arma");
+            alert("Usuario no valido");
             $('#formLogin')[0].reset();
             $("p.erromsg").removeClass("hidden").fadeOut(2000);
            
@@ -70,31 +70,32 @@ function save_user(){
         processData: false,
         success: function(datos)
         {
-          alert("enviado");
+          alert("Usuario Guardado");
           $("#formUser")[0].reset();
+          $("div.containerTable").empty();
+          $("div.containerTable").html(datos);
+           $('#tableUsers').DataTable();
+         
         }
     });
 }
-function save_costumer(){
-    event.preventDefault();
-    var formData = new FormData($("#formCostumer")[0]);
-    var ruta = "CLASS/class.php";
-    $.ajax({
-        url: ruta,
-        type: "POST",
-        data: formData,
-        contentType: false,
-        processData: false,
-        success: function(datos)
-        {
-          alert("enviado");
-          $("#formCostumer")[0].reset();
-        }
-    });
+    function deleteUser(obj) {
+        event.preventDefault();
+         //var sel = obj.options[obj.selectedIndex].value;
+        var id = $(obj).attr("href");
+      
+        $.get(id, function(data, status){
+            alert(status);
+           alert("Usuario eliminado");
 
-}
+            $("div.containerTable").empty();
+            $("div.containerTable").html(data);
+            $('#tableUsers').DataTable();
 
-$("a.delete").click(function(){
+        });
+    }
+
+/**$("a.delete").click(function(){
     event.preventDefault();
 
    var id = $(this).attr('href');
@@ -111,7 +112,7 @@ $("a.delete").click(function(){
 
     });
 });
-/**function ajaxPdf(){
+function ajaxPdf(){
     var formData = new FormData($("#formGPfg")[0]);
     var ruta = "CLASS/pdfC.php";
     $.ajax({

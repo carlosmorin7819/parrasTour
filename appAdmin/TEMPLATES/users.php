@@ -68,10 +68,10 @@
 				</th>
 				<?php if ($user_master): ?>
 					<th>
-						<a href="CLASS/deleteUser.php?id=<?= $elemento['id']; ?>" class="buttonDelete delete">
+						<a href="CLASS/deleteUser.php?id=<?= $elemento['id']; ?>"  onclick="deleteUser(this);" class="buttonDelete delete">
 							<i class="fa fa-trash-o" aria-hidden="true"></i>
 						</a>
-						
+
 					</th>
 				<?php endif ?>
 

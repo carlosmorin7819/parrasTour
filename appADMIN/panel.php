@@ -9,7 +9,7 @@
 			$typeTemplate = $_GET['template'];
 			switch ($typeTemplate) {
 				case '1':
-					include 'TEMPLATES/posts.php';
+					include 'TEMPLATES/users.php';
 					break;
 				case '2':
 					include 'TEMPLATES/bedrooms.php';

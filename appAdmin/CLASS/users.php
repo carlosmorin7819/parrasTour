@@ -39,6 +39,55 @@
                 //echo "el archivo ha sido movido exitosamente";
                 mysql_query("INSERT INTO users VALUES('','$name','$phone','$email','$type_user','$pass','$nombre','$gender')");
 
+                /**ARMAR TABLA PARA MOSTRAR POR AJAX**/
+                $query_users = mysql_query("SELECT * FROM users");
+
+	$table = '<table width="100%" border="0" id="tableUsers">';
+	$table .= '<thead>	
+					<tr>
+						<td>ID</td>
+						<td>Nombre</td>
+						<td>Mail</td>
+						<td>Tipo Usario</td>
+						<td>Genero</td>
+						<td>Telefono</td>
+						<td>Editar</td>
+						<td>Eliminar</td>
+					</tr>
+				</thead>';
+	$table .= '<tbody>';
+			while($elemento = mysql_fetch_array($query_users)){ 
+				$table .= '<tr>
+				<th>'.$elemento['id'].'</th>
+				<th>'.$elemento['name'].'</th>
+				<th>'.$elemento['email'].'</th>
+				<th>'.$elemento['type_user'].'</th>
+				<th>'.$elemento['gender'].'</th>
+				<th>'.$elemento['phone'].'</th>
+			
+				<th>
+					<a href="" class="buttonAdd">
+						<i class="fa fa-pencil" aria-hidden="true"></i>
+					</a>
+				</th>
+				
+					<th>
+						<a href="CLASS/deleteUser.php?id='.$elemento['id'].'" class="buttonDelete delete"  onclick="deleteUser(this);">
+							<i class="fa fa-trash-o" aria-hidden="true"></i>
+						</a>
+						
+					</th>
+			
+
+							</tr>';
+				}
+				$table .= '</tbody></table>';
+
+
+
+
+				echo $table;
+
             }else{
 
                 echo "Error al subir el archivo";

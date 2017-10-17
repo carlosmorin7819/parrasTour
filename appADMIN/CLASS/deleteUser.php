@@ -28,7 +28,7 @@
 	$table .= '<tr>
 				<th>'.$elemento['id'].'</th>
 				<th>'.$elemento['name'].'</th>
-				<th>'.$elemento['mail'].'</th>
+				<th>'.$elemento['email'].'</th>
 				<th>'.$elemento['type_user'].'</th>
 				<th>'.$elemento['gender'].'</th>
 				<th>'.$elemento['phone'].'</th>
@@ -40,7 +40,7 @@
 				</th>
 				
 					<th>
-						<a href="CLASS/deleteUser.php?id='.$elemento['id'].'" class="buttonDelete delete">
+						<a href="CLASS/deleteUser.php?id='.$elemento['id'].'" class="buttonDelete delete" onclick="deleteUser(this);">
 							<i class="fa fa-trash-o" aria-hidden="true"></i>
 						</a>
 						
